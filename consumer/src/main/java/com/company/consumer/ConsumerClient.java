@@ -11,7 +11,7 @@ class ConsumerClient {
     public Person getPerson(final int id) {
         final RestTemplate restTemplate = new RestTemplate();
 
-        final ResponseEntity<Person> result = restTemplate.exchange("http://localhost:8081/employee/" + id,
+        final ResponseEntity<Person> result = restTemplate.exchange("http://localhost:8080/employee/" + id,
                 HttpMethod.GET, null, Person.class);
 
         return result.getBody();
