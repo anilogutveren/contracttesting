@@ -1,4 +1,4 @@
-package com.company.producer.controller;
+package com.company.producer;
 
 import lombok.*;
 
